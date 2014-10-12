@@ -206,7 +206,7 @@ public class SevenEval {
 		}
 	}
 	
-	final int getRankOf (int CARD1, int CARD2, int CARD3, int CARD4, int CARD5, int CARD6, int CARD7) {
+	public final int getRankOf (int CARD1, int CARD2, int CARD3, int CARD4, int CARD5, int CARD6, int CARD7) {
 		
 		long KEY = 	deckcardsKey[CARD1] +
 					deckcardsKey[CARD2] +
