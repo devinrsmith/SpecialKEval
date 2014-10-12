@@ -1,29 +1,62 @@
-*.pdf
+# Maven.gitignore
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
 
-.DS_Store
+# Java.gitignore
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+#Linux.gitignore
+*~
+
+#Eclipse.gitignore
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
 *.swp
 *~.nib
+local.properties
+.settings/
+.loadpath
 
-build/
+# External tool builders
+.externalToolBuilders/
 
-*.pbxuser
-*.perspective
-*.perspectivev3
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-*.xcuserdata
-*.xcscheme
+# CDT-specific
+.cproject
 
-xschememanagement.plist
+# PDT-specific
+.buildpath
 
-CoooriDictionary.xcodeproj/project.pbxproj
-CoooriDictionary.xcodeproj/project.xcworkspace/xcuserdata/Ken.xcuserdatad/UserInterfaceState.xcuserstate
-CoooriDictionary.xcodeproj/xcuserdata/Ken.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
-CoooriDictionary.xcodeproj/xcuserdata/Ken.xcuserdatad/xcschemes/CoooriDictionary.xcscheme
-CoooriDictionary.xcodeproj/xcuserdata/Ken.xcuserdatad/xcschemes/xcschememanagement.plist
-C++/.DS_Store
-Java/.DS_Store
-Java/src/.DS_Store
-Java/src/com/.DS_Store
-Java/src/com/SpecialK/.DS_Store
-Java/src/com/SpecialK/SpecialKEval/.DS_Store
-Objective-C/.DS_Store
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+*.log
