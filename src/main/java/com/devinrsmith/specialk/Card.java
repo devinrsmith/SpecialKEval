@@ -1,5 +1,8 @@
 package com.devinrsmith.specialk;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum Card {
     ACE_OF_SPADES(CardValue.ACE, CardSuit.SPADES),
     ACE_OF_HEARTS(CardValue.ACE, CardSuit.HEARTS),
@@ -67,6 +70,19 @@ public enum Card {
     TWO_OF_CLUBS(CardValue.TWO, CardSuit.CLUBS)
 
     ;
+
+    private static final Map<String, Card> map;
+    static {
+        map = new HashMap<>();
+        for (Card card : values()) {
+            map.put(card.getAbbreviation(), card);
+        }
+        // todo guava immutable map?
+    }
+
+    public static Card fromAbbreviaton(String abbreviation) {
+        return map.get(abbreviation);
+    }
 
     private final CardValue value;
     private final CardSuit suit;
